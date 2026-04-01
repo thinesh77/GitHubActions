@@ -1,0 +1,21 @@
+name: Accessibility Test Pipeline
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  accessibility-test:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Debug Info
+        run: |
+          echo "Triggered by: ${{ github.event_name }}"
+          date
+
+      - name: Hello
+        run: echo "Helooo...!"
