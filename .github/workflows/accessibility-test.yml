@@ -14,8 +14,10 @@ jobs:
 
       - name: Debug Info
         run: |
-          echo "Triggered by: ${{ github.event_name }}"
+          echo "Triggered by   : ${{ github.event_name }}"
+          echo "Branch (ref)   : ${{ github.ref }}"
+          echo "Branch (name)  : ${{ github.ref_name }}"
           date
 
       - name: Hello
-        run: echo "Helooo...!"
+        run: echo "Helooo Main...!"
