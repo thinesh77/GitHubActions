@@ -3,7 +3,7 @@ name: Accessibility Test Pipeline
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '* * * * *'
 
 jobs:
   accessibility-test:
